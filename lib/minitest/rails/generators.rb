@@ -1,7 +1,6 @@
-gem "minitest"
-require "minitest/autorun"
+require "minitest/rails"
+require "rails/generators/test_case"
 
-require 'rails/generators/test_case'
 class Rails::Generators::TestCase
   register_spec_type(self) do |desc|
     Class === desc && desc < Rails::Generators::Base

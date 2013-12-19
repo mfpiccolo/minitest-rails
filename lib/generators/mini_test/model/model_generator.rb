@@ -10,9 +10,9 @@ module MiniTest
 
       def create_test_file
         if options[:spec]
-          template "model_spec.rb", "test/models/#{file_name}_test.rb"
+          template "model_spec.rb", File.join("test","models", class_path, "#{file_name}_test.rb")
         else
-          template "model_test.rb", "test/models/#{file_name}_test.rb"
+          template "model_test.rb", File.join("test","models", class_path, "#{file_name}_test.rb")
         end
       end
 
@@ -20,7 +20,7 @@ module MiniTest
 
       def create_fixture_file
         if options[:fixture] && options[:fixture_replacement].nil?
-          template "fixtures.yml", "test/fixtures/#{plural_file_name}.yml"
+          template "fixtures.yml", File.join("test","fixtures", class_path, "#{plural_file_name}.yml")
         end
       end
     end
