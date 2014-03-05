@@ -4,7 +4,7 @@ require "generators/mini_test/scaffold/scaffold_generator"
 class TestScaffoldGenerator < GeneratorTest
 
   def test_scaffold_generator
-    assert_output(/create  test\/controllers\/users_controller_test.rb/m) do
+    assert_output(/create  est.controllers.users_controller_test.rb\n/) do
       MiniTest::Generators::ScaffoldGenerator.start ["user"]
     end
     assert File.exists? "test/controllers/users_controller_test.rb"
@@ -13,7 +13,7 @@ class TestScaffoldGenerator < GeneratorTest
   end
 
   def test_scaffold_generator_spec
-    assert_output(/create  test\/controllers\/users_controller_test.rb/m) do
+    assert_output(/create  est.controllers.users_controller_test.rb\n/) do
       MiniTest::Generators::ScaffoldGenerator.start ["user", "--spec"]
     end
     assert File.exists? "test/controllers/users_controller_test.rb"

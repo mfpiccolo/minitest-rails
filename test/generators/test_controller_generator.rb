@@ -4,7 +4,7 @@ require "generators/mini_test/controller/controller_generator"
 class TestControllerGenerator < GeneratorTest
 
   def test_controller_generator
-    assert_output(/create  test\/controllers\/user_controller_test.rb/m) do
+    assert_output(/create  est.controllers.user_controller_test.rb\n/) do
       MiniTest::Generators::ControllerGenerator.start ["user"]
     end
     assert File.exists? "test/controllers/user_controller_test.rb"
@@ -13,7 +13,7 @@ class TestControllerGenerator < GeneratorTest
   end
 
   def test_namespaced_controller_generator
-    assert_output(/create  test\/controllers\/admin\/user_controller_test.rb/m) do
+    assert_output(/create  est.controllers.admin.user_controller_test.rb\n/) do
       MiniTest::Generators::ControllerGenerator.start ["admin/user"]
     end
     assert File.exists? "test/controllers/admin/user_controller_test.rb"
@@ -22,7 +22,7 @@ class TestControllerGenerator < GeneratorTest
   end
 
   def test_controller_generator_spec
-    assert_output(/create  test\/controllers\/user_controller_test.rb/m) do
+    assert_output(/create  est.controllers.user_controller_test.rb\n/) do
       MiniTest::Generators::ControllerGenerator.start ["user", "--spec"]
     end
     assert File.exists? "test/controllers/user_controller_test.rb"
@@ -31,7 +31,7 @@ class TestControllerGenerator < GeneratorTest
   end
 
   def test_namespaced_controller_generator_spec
-    assert_output(/create  test\/controllers\/admin\/user_controller_test.rb/m) do
+    assert_output(/create  est.controllers.admin.user_controller_test.rb\n/) do
       MiniTest::Generators::ControllerGenerator.start ["admin/user", "--spec"]
     end
     assert File.exists? "test/controllers/admin/user_controller_test.rb"

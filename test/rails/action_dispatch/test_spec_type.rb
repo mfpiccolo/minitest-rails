@@ -1,6 +1,6 @@
 require "helper"
 
-class TestActionDispatchSpecType < MiniTest::Unit::TestCase
+class TestActionDispatchSpecType < Minitest::Test
   def assert_dispatch actual
     assert_equal ActionDispatch::IntegrationTest, actual
   end

@@ -1,6 +1,6 @@
 require "helper"
 
-class TestActionViewSpecType < MiniTest::Unit::TestCase
+class TestActionViewSpecType < Minitest::Test
   def assert_view actual
     assert_equal ActionView::TestCase, actual
   end

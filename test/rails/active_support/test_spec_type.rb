@@ -2,7 +2,7 @@ require "helper"
 
 class SomeRandomModel < ActiveRecord::Base; end
 
-class TestActiveSupportSpecType < MiniTest::Unit::TestCase
+class TestActiveSupportSpecType < Minitest::Test
 
   def assert_support actual
     assert_equal ActiveSupport::TestCase, actual

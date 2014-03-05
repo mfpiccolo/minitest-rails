@@ -33,7 +33,7 @@ class ActiveSupport::TestCase
   # See also MiniTest::Rails::Expectations#wont_be_present
   #
   # :args: actual, message = nil
-  alias :refute_present :assert_blank
+  # alias :refute_present :assert_blank
 
   ##
   # Checks if an expression is present. Passes if actual.present? is true.
@@ -69,7 +69,7 @@ class ActiveSupport::TestCase
   # See also MiniTest::Rails::Expectations#wont_be_blank
   #
   # :args: actual, message = nil
-  alias :refute_blank :assert_present
+  # alias :refute_blank :assert_present
 
   ##
   # Checks the numeric difference between the return value of an expression as a result of what is evaluated.

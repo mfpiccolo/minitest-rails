@@ -1,6 +1,6 @@
 require "helper"
 
-class TestMiniTest < MiniTest::Unit::TestCase
+class TestMiniTest < Minitest::Test
   def test_sanity
     assert MiniTest::Rails::VERSION
   end

@@ -5,6 +5,11 @@ end
 Rails.application = TestApp
 Rails.configuration.secret_key_base = "abc123"
 
+ActiveRecord::Base.establish_connection(
+  :adapter => 'sqlite3',
+  :database => ':memory:'
+)
+
 class ApplicationController < ActionController::Base; end
 class ModelsController      < ApplicationController;  end
 module Admin

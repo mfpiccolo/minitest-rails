@@ -3,7 +3,7 @@ require "helper"
 class NotificationMailer < ActionMailer::Base; end
 class Notifications < ActionMailer::Base; end
 
-class TestActionMailerSpecType < MiniTest::Unit::TestCase
+class TestActionMailerSpecType < Minitest::Test
   def assert_mailer actual
     assert_equal ActionMailer::TestCase, actual
   end

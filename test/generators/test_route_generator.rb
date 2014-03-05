@@ -4,7 +4,7 @@ require "generators/mini_test/route/route_generator"
 class TestRouteGenerator < GeneratorTest
 
   def test_route_generator
-    assert_output(/create  test\/routes\/route_test.rb/m) do
+    assert_output(/create  est.routes.route_test.rb\n/) do
       MiniTest::Generators::RouteGenerator.start
     end
     assert File.exists? "test/routes/route_test.rb"
@@ -13,7 +13,7 @@ class TestRouteGenerator < GeneratorTest
   end
 
   def test_route_generator_spec
-    assert_output(/create  test\/routes\/route_test.rb/m) do
+    assert_output(/create  est.routes.route_test.rb\n/) do
       MiniTest::Generators::RouteGenerator.start ["--spec"]
     end
     assert File.exists? "test/routes/route_test.rb"

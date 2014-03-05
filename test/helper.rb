@@ -22,7 +22,7 @@ class FakeFS::File
   end
 end
 
-class GeneratorTest < MiniTest::Unit::TestCase
+class GeneratorTest < Minitest::Test
   def setup
     Rails::Generators.no_color!
     FakeFS.activate!

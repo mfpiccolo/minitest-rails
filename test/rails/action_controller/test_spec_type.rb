@@ -3,7 +3,7 @@ require "helper"
 class ApplicationController < ActionController::Base; end
 class ModelsController      < ApplicationController;  end
 
-class TestApplicationControllerSpecType < MiniTest::Unit::TestCase
+class TestApplicationControllerSpecType < Minitest::Test
   def assert_controller actual
     assert_equal ActionController::TestCase, actual
   end

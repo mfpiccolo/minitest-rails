@@ -3,7 +3,7 @@ require "minitest/rails/generators"
 
 class InstallGenerator < Rails::Generators::Base; end
 
-class TestGeneratorsSpecType < MiniTest::Unit::TestCase
+class TestGeneratorsSpecType < Minitest::Test
   def assert_generator actual
     assert_equal Rails::Generators::TestCase, actual
   end

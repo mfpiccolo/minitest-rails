@@ -19,8 +19,8 @@ Hoe.spec 'minitest-rails' do
 
   license "MIT"
 
-  dependency 'minitest',      '~> 4.7'
-  dependency 'minitest-test', '~> 1.0'
+  dependency 'minitest',      '>= 5.3'
+  #dependency 'minitest-test', '~> 1.0'
   dependency 'railties',      '>= 3.0'
   dependency 'fakefs',        '~> 0.4', :dev
 end

@@ -26,7 +26,7 @@ class ActiveSupport::TestCase
   end if self.respond_to? :describe
 
   # Add spec DSL
-  extend MiniTest::Spec::DSL
+  extend Minitest::Spec::DSL
 
   # Resolve constants from the test name when using the spec DSL
   include MiniTest::Rails::Testing::ConstantLookup
