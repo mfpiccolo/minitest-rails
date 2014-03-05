@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name = "minitest-rails"
-  s.version = "1.0.0.beta3.20140227161412"
+  s.version = "1.0.0.beta4"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
