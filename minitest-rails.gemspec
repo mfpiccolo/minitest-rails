@@ -29,14 +29,14 @@ Gem::Specification.new do |s|
       #s.add_runtime_dependency(%q<minitest-test>, ["~> 1.0"])
       s.add_runtime_dependency(%q<railties>, [">= 3.0"])
       s.add_development_dependency(%q<rdoc>, ["~> 4.0"])
-      s.add_development_dependency(%q<fakefs>, ["= 0.4.0"])
+      s.add_development_dependency(%q<fakefs>, ["= 0.5.1"])
       s.add_development_dependency(%q<hoe>, ["~> 3.9"])
     else
       s.add_dependency(%q<minitest>, ["~> 5.3"])
       s.add_dependency(%q<minitest-test>, ["~> 1.0"])
       s.add_dependency(%q<railties>, [">= 3.0"])
       s.add_dependency(%q<rdoc>, ["~> 4.0"])
-      s.add_dependency(%q<fakefs>, ["= 0.4.0"])
+      s.add_dependency(%q<fakefs>, ["= 0.5.1"])
       s.add_dependency(%q<hoe>, ["~> 3.9"])
     end
   else
@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<minitest-test>, ["~> 1.0"])
     s.add_dependency(%q<railties>, [">= 3.0"])
     s.add_dependency(%q<rdoc>, ["~> 4.0"])
-    s.add_dependency(%q<fakefs>, ["= 0.4.0"])
+    s.add_dependency(%q<fakefs>, ["= 0.5.1"])
     s.add_dependency(%q<hoe>, ["~> 3.9"])
   end
 end
